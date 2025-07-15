@@ -51,7 +51,20 @@ public class Test {
 		// Facade
 		
 		Facade facade = new Facade();
-		facade.migrarCliente("Venilton", "14801788");
-	}
+		
+        	System.out.println("--- Teste 1: Migração bem-sucedida ---");
+        	fachada.migrarCliente("Alice Wonderland", "58400-000"); 
+        
+        	System.out.println("\n--- Teste 2: CEP inválido/não encontrado ---");
+               	fachada.migrarCliente("Bob Esponja", "99999-999"); 
 
+        	System.out.println("\n--- Teste 3: Nome vazio ---");
+        	fachada.migrarCliente("", "58000-000");
+
+        	System.out.println("\n--- Teste 4: Nome nulo ---");
+        	fachada.migrarCliente(null, "58000-000");
+        
+        	System.out.println("\n--- Teste 5: CEP nulo ---");
+        	fachada.migrarCliente("Carlos Eduardo", null);
+    }
 }
