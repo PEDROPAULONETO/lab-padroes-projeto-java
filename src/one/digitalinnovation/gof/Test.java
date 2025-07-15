@@ -53,7 +53,7 @@ public class Test {
 		Facade facade = new Facade();
 		
         	System.out.println("--- Teste 1: Migração bem-sucedida ---");
-        	fachada.migrarCliente("Alice Wonderland", "58400-000"); 
+        	fachada.migrarCliente("Alice Maravilha", "58400-000"); 
         
         	System.out.println("\n--- Teste 2: CEP inválido/não encontrado ---");
                	fachada.migrarCliente("Bob Esponja", "99999-999"); 
@@ -65,6 +65,6 @@ public class Test {
         	fachada.migrarCliente(null, "58000-000");
         
         	System.out.println("\n--- Teste 5: CEP nulo ---");
-        	fachada.migrarCliente("Carlos Eduardo", null);
+        	fachada.migrarCliente("Clark Kent", null);
     }
 }
